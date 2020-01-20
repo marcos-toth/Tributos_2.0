@@ -1,0 +1,1241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A31C57F3-BD49-4327-902A-604B83C4CB47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tributos_2._0.My.MyApplication</StartupObject>
+    <RootNamespace>Tributos_2._0</RootNamespace>
+    <AssemblyName>Tributos_2.0</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\10.101.0.43\Departamentos\atualizacao\Tributos\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>\\10.101.0.43\Departamentos\atualizacao\Tributos\</UpdateUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>Sistema de Centralização de Encarcos e Tributos</ProductName>
+    <PublisherName>Marcos Toth</PublisherName>
+    <SuiteName>Tributos</SuiteName>
+    <MinimumRequiredVersion>1.0.0.65</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tributos_2.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tributos_2.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo-IASD.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>136778257961495981B0A6E468F4B430AE11FFB1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Tributos_2.0_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Tributos_2.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Tributos_2.0.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Tributos_2.0.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Tributos_2.0.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\Fm_Cadastro_Cliente _IR.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Cliente _IR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Cliente _IR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Deducao_INSS_Decimo_Terceiro.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Deducao_INSS_Decimo_Terceiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Deducao_INSS_Decimo_Terceiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_COFINS.Designer.vb">
+      <DependentUpon>Fm_Cadastro_COFINS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_COFINS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Deducao_INSS.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Deducao_INSS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Deducao_INSS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Depositos.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Depositos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Depositos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Entidade.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Entidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Entidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Funcao.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Funcao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Funcao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_IR_Aluguel.Designer.vb">
+      <DependentUpon>Fm_Cadastro_IR_Aluguel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_IR_Aluguel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_cadastro_IR_Recisao_Aluguel.Designer.vb">
+      <DependentUpon>Fm_cadastro_IR_Recisao_Aluguel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_cadastro_IR_Recisao_Aluguel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Observacao.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Observacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Observacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Pagamentos_Realizados.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Pagamentos_Realizados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Pagamentos_Realizados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Usuario.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Cadastro_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Deducao_IR_Aluguel.Designer.vb">
+      <DependentUpon>Fm_Deducao_IR_Aluguel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Deducao_IR_Aluguel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Somar.Designer.vb">
+      <DependentUpon>Fm_Somar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Somar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Somar_2.Designer.vb">
+      <DependentUpon>Fm_Somar_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\Fm_Somar_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexao.vb" />
+    <Compile Include="Conexcao_SQL.vb" />
+    <Compile Include="Configuracao\Fm_Configuracao_Abre_Periodo.Designer.vb">
+      <DependentUpon>Fm_Configuracao_Abre_Periodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Abre_Periodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Abri_Ano.Designer.vb">
+      <DependentUpon>Fm_Configuracao_Abri_Ano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Abri_Ano.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Fecha_Ano.Designer.vb">
+      <DependentUpon>Fm_Configuracao_Fecha_Ano.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Fecha_Ano.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Fecha_Periodo.Designer.vb">
+      <DependentUpon>Fm_Configuracao_Fecha_Periodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\Fm_Configuracao_Fecha_Periodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracao\Fm_ProgressBar.Designer.vb">
+      <DependentUpon>Fm_ProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracao\Fm_ProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_Cofins.Designer.vb">
+      <DependentUpon>Fm_Contabilizacao_Cofins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_Cofins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_Decimo_Terceiro.Designer.vb">
+      <DependentUpon>Fm_Contabilizacao_Decimo_Terceiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_Decimo_Terceiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_IR.Designer.vb">
+      <DependentUpon>Fm_Contabilizacao_IR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_IR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_Tributos.Designer.vb">
+      <DependentUpon>Fm_Contabilizacao_Tributos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contabilizacao\Fm_Contabilizacao_Tributos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS_Tributos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Tributos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Tributos.vb">
+      <DependentUpon>DS_Tributos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enter.vb" />
+    <Compile Include="Fm_Cad_Data_Deposito.Designer.vb">
+      <DependentUpon>Fm_Cad_Data_Deposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Cad_Data_Deposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Contato.Designer.vb">
+      <DependentUpon>Fm_Contato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Contato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Data_Deposito.Designer.vb">
+      <DependentUpon>Fm_Data_Deposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Data_Deposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Inform.Designer.vb">
+      <DependentUpon>Fm_Inform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Inform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Principal.Designer.vb">
+      <DependentUpon>Fm_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Trocar_Entidade_Logada.Designer.vb">
+      <DependentUpon>Fm_Trocar_Entidade_Logada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Trocar_Entidade_Logada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Troca_Senha.Designer.vb">
+      <DependentUpon>Fm_Troca_Senha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Troca_Senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Versao.Designer.vb">
+      <DependentUpon>Fm_Versao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Versao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Video_Treinamentos.Designer.vb">
+      <DependentUpon>Fm_Video_Treinamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Video_Treinamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Login.Designer.vb">
+      <DependentUpon>Fm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="ModCrip.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS.Designer.vb">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_13.Designer.vb">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS_13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_13_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS_13_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_13_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cad_Cliente IR Aluguel\Fm_Cadastro_Cliente_IR_Aluguel_R.Designer.vb">
+      <DependentUpon>Fm_Cadastro_Cliente_IR_Aluguel_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cad_Cliente IR Aluguel\Fm_Cadastro_Cliente_IR_Aluguel_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Centralizacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao_Entidade.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Centralizacao_Entidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao_Entidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Centralizacao_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_Campo_COFINS_R.designer.vb">
+      <DependentUpon>Fm_Relatorio_Campo_COFINS_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_Campo_COFINS_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_UCB_Cofins_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_UCB_Cofins_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_UCB_Cofins_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_Decimo_Terceiro.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Decimo_Terceiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_Decimo_Terceiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_Decimo_Terceiro_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Decimo_Terceiro_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_Decimo_Terceiro_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_INSS_Decimo_Terceiro.Designer.vb">
+      <DependentUpon>Fm_Relatorio_INSS_Decimo_Terceiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_INSS_Decimo_Terceiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_INSS_Decimo_Terceiro_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_INSS_Decimo_Terceiro_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_INSS_Decimo_Terceiro_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Mensal_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Depositos_Mensal_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Mensal_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Deposito_Decimo_13_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Deposito_Decimo_13_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Deposito_Decimo_13_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Duplicado\Fm_Relatorio_Tributos_Decimo_Terceiro_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Decimo_Terceiro_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Duplicado\Fm_Relatorio_Tributos_Decimo_Terceiro_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Demais_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Depositos_Demais_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Demais_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_FGTS_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Depositos_FGTS_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_FGTS_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Geral_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Depositos_Geral_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Geral_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Nao_Depositositaram_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Nao_Depositositaram_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Nao_Depositositaram_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Funcoes\Fm_Relatorio_Funcoes.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Funcoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Funcoes\Fm_Relatorio_Funcoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Funcoes\Fm_Relatorio_Funcoes_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Funcoes_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Funcoes\Fm_Relatorio_Funcoes_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_IR_Recisao_Aluguel.Designer.vb">
+      <DependentUpon>Fm_IR_Recisao_Aluguel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_IR_Recisao_Aluguel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_IR_Recisao_Aluguel_R.Designer.vb">
+      <DependentUpon>Fm_IR_Recisao_Aluguel_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_IR_Recisao_Aluguel_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Informe_DIRF_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Informe_DIRF_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Informe_DIRF_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Informe_IR_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Informe_IR_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Informe_IR_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_IR_Data_Recolhimento.Designer.vb">
+      <DependentUpon>Fm_Relatorio_IR_Data_Recolhimento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_IR_Data_Recolhimento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_IR_Data_Recolhimento_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_IR_Data_Recolhimento_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_IR_Data_Recolhimento_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_IR_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_IR_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_IR_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_UCB_IR_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_UCB_IR_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_UCB_IR_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_UCB_IR_Resisao_Contrato.Designer.vb">
+      <DependentUpon>Fm_UCB_IR_Resisao_Contrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_UCB_IR_Resisao_Contrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_UCB_IR_Resisao_Contrato_R.Designer.vb">
+      <DependentUpon>Fm_UCB_IR_Resisao_Contrato_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_UCB_IR_Resisao_Contrato_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Mes_Aberto_APS\Fm_Mes_Aberto_APS.Designer.vb">
+      <DependentUpon>Fm_Mes_Aberto_APS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Mes_Aberto_APS\Fm_Mes_Aberto_APS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Observacao\Fm_Relatorio_Observacao_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Observacao_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Observacao\Fm_Relatorio_Observacao_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_Campo_COFINS.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Campo_COFINS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_Campo_COFINS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Observacao\Fm_Relatorio_Observacao.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Observacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Observacao\Fm_Relatorio_Observacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_UCB_Cofins.Designer.vb">
+      <DependentUpon>Fm_Relatorio_UCB_Cofins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cofins\Fm_Relatorio_UCB_Cofins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Campo_Deposito.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Campo_Deposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Campo_Deposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Nao_Depositaram.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Nao_Depositaram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_Nao_Depositaram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_UCB_Depositos.designer.vb">
+      <DependentUpon>Fm_Relatorio_UCB_Depositos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Depositos\Fm_Relatorio_UCB_Depositos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Campo_IR.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Campo_IR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Campo_IR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Informe_IR.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Informe_IR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_Informe_IR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_UCB_IR.Designer.vb">
+      <DependentUpon>Fm_Relatorio_UCB_IR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\IR\Fm_Relatorio_UCB_IR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Anual_R.designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Anual_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Anual_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Demais_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Demais_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Demais_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_FGTS_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_FGTS_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_FGTS_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Geral_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Geral_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Geral_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_INSS_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB_INSS_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_INSS_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_DARF_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB_DARF_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_DARF_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_FGTS_R.Designer.vb">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB_FGTS_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_FGTS_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cad_Usuarios\Fm_Relatório_Usuario.Designer.vb">
+      <DependentUpon>Fm_Relatório_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cad_Usuarios\Fm_Relatório_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Cad_Usuarios\Fm_Relatório_Usuario_R.Designer.vb">
+      <DependentUpon>Fm_Relatório_Usuario_R.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Cad_Usuarios\Fm_Relatório_Usuario_R.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Cliente _IR.resx">
+      <DependentUpon>Fm_Cadastro_Cliente _IR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Deducao_INSS_Decimo_Terceiro.resx">
+      <DependentUpon>Fm_Cadastro_Deducao_INSS_Decimo_Terceiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_COFINS.resx">
+      <DependentUpon>Fm_Cadastro_COFINS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Deducao_INSS.resx">
+      <DependentUpon>Fm_Cadastro_Deducao_INSS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Depositos.resx">
+      <DependentUpon>Fm_Cadastro_Depositos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Entidade.resx">
+      <DependentUpon>Fm_Cadastro_Entidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Funcao.resx">
+      <DependentUpon>Fm_Cadastro_Funcao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_IR_Aluguel.resx">
+      <DependentUpon>Fm_Cadastro_IR_Aluguel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_cadastro_IR_Recisao_Aluguel.resx">
+      <DependentUpon>Fm_cadastro_IR_Recisao_Aluguel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Observacao.resx">
+      <DependentUpon>Fm_Cadastro_Observacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Pagamentos_Realizados.resx">
+      <DependentUpon>Fm_Cadastro_Pagamentos_Realizados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Cadastro_Usuario.resx">
+      <DependentUpon>Fm_Cadastro_Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Deducao_IR_Aluguel.resx">
+      <DependentUpon>Fm_Deducao_IR_Aluguel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Somar.resx">
+      <DependentUpon>Fm_Somar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\Fm_Somar_2.resx">
+      <DependentUpon>Fm_Somar_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Fm_Configuracao_Abre_Periodo.resx">
+      <DependentUpon>Fm_Configuracao_Abre_Periodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Fm_Configuracao_Abri_Ano.resx">
+      <DependentUpon>Fm_Configuracao_Abri_Ano.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Fm_Configuracao_Fecha_Ano.resx">
+      <DependentUpon>Fm_Configuracao_Fecha_Ano.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Fm_Configuracao_Fecha_Periodo.resx">
+      <DependentUpon>Fm_Configuracao_Fecha_Periodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracao\Fm_ProgressBar.resx">
+      <DependentUpon>Fm_ProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contabilizacao\Fm_Contabilizacao_Cofins.resx">
+      <DependentUpon>Fm_Contabilizacao_Cofins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contabilizacao\Fm_Contabilizacao_Decimo_Terceiro.resx">
+      <DependentUpon>Fm_Contabilizacao_Decimo_Terceiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contabilizacao\Fm_Contabilizacao_IR.resx">
+      <DependentUpon>Fm_Contabilizacao_IR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contabilizacao\Fm_Contabilizacao_Tributos.resx">
+      <DependentUpon>Fm_Contabilizacao_Tributos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Cad_Data_Deposito.resx">
+      <DependentUpon>Fm_Cad_Data_Deposito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Contato.resx">
+      <DependentUpon>Fm_Contato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Data_Deposito.resx">
+      <DependentUpon>Fm_Data_Deposito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Inform.resx">
+      <DependentUpon>Fm_Inform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Principal.pt-AO.resx">
+      <DependentUpon>Fm_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Principal.pt.resx">
+      <DependentUpon>Fm_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Principal.resx">
+      <DependentUpon>Fm_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Trocar_Entidade_Logada.resx">
+      <DependentUpon>Fm_Trocar_Entidade_Logada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Troca_Senha.resx">
+      <DependentUpon>Fm_Troca_Senha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Versao.resx">
+      <DependentUpon>Fm_Versao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Video_Treinamentos.resx">
+      <DependentUpon>Fm_Video_Treinamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Login.resx">
+      <DependentUpon>Fm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS.resx">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_13.resx">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS_13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_13_R.resx">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS_13_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Abatimentos\Fm_Relatorio_AbatimentoINSS_R.resx">
+      <DependentUpon>Fm_Relatorio_AbatimentoINSS_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Abatimentos\Relatorio_AbatimentoINSS.rdlc" />
+    <EmbeddedResource Include="Relatorios\Abatimentos\Relatorio_AbatimentoINSS_13.rdlc" />
+    <EmbeddedResource Include="Relatorios\Cad_Cliente IR Aluguel\Fm_Cadastro_Cliente_IR_Aluguel_R.resx">
+      <DependentUpon>Fm_Cadastro_Cliente_IR_Aluguel_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cad_Cliente IR Aluguel\Cad_Cliente_IR.rdlc" />
+    <EmbeddedResource Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao.resx">
+      <DependentUpon>Fm_Relatorio_Centralizacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao_Entidade.resx">
+      <DependentUpon>Fm_Relatorio_Centralizacao_Entidade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Centralizacao\Fm_Relatorio_Centralizacao_R.resx">
+      <DependentUpon>Fm_Relatorio_Centralizacao_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Centralizacao\Relatorio_Centralizacao.rdlc" />
+    <EmbeddedResource Include="Relatorios\Cofins\Fm_Relatorio_Campo_COFINS_R.resx">
+      <DependentUpon>Fm_Relatorio_Campo_COFINS_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cofins\Fm_Relatorio_UCB_Cofins_R.resx">
+      <DependentUpon>Fm_Relatorio_UCB_Cofins_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cofins\Relatorio_COFINS.rdlc" />
+    <EmbeddedResource Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_Decimo_Terceiro.resx">
+      <DependentUpon>Fm_Relatorio_Decimo_Terceiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_Decimo_Terceiro_R.resx">
+      <DependentUpon>Fm_Relatorio_Decimo_Terceiro_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_INSS_Decimo_Terceiro.resx">
+      <DependentUpon>Fm_Relatorio_INSS_Decimo_Terceiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Decimo_Terceiro\Fm_Relatorio_INSS_Decimo_Terceiro_R.resx">
+      <DependentUpon>Fm_Relatorio_INSS_Decimo_Terceiro_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Decimo_Terceiro\Relatorio_INSS_Decimo_Terceiro.rdlc" />
+    <EmbeddedResource Include="Relatorios\Decimo_Terceiro\Relatorio_Decimo_Terceiro.rdlc" />
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Mensal_R.resx">
+      <DependentUpon>Fm_Relatorio_Depositos_Mensal_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Deposito_Decimo_13_R.resx">
+      <DependentUpon>Fm_Relatorio_Deposito_Decimo_13_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Relatorio_Deposito_Decimo_13.rdlc" />
+    <EmbeddedResource Include="Relatorios\Duplicado\Fm_Relatorio_Tributos_Decimo_Terceiro_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Decimo_Terceiro_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Demais_R.resx">
+      <DependentUpon>Fm_Relatorio_Depositos_Demais_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Depositos_FGTS_R.resx">
+      <DependentUpon>Fm_Relatorio_Depositos_FGTS_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Depositos_Geral_R.resx">
+      <DependentUpon>Fm_Relatorio_Depositos_Geral_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Nao_Depositositaram_R.resx">
+      <DependentUpon>Fm_Relatorio_Nao_Depositositaram_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Relatorio_Deposito_FGTS.rdlc" />
+    <EmbeddedResource Include="Relatorios\Depositos\Relatorio_Depositos_Demais.rdlc" />
+    <EmbeddedResource Include="Relatorios\Depositos\Relatorio_Depositos_Geral.rdlc" />
+    <EmbeddedResource Include="Relatorios\Depositos\Relatório_Nao_Depositou.rdlc" />
+    <EmbeddedResource Include="Relatorios\Duplicado\Relatorio_Tributos_Decimo_Terceiro.rdlc" />
+    <EmbeddedResource Include="Relatorios\Funcoes\Fm_Relatorio_Funcoes.resx">
+      <DependentUpon>Fm_Relatorio_Funcoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Funcoes\Fm_Relatorio_Funcoes_R.resx">
+      <DependentUpon>Fm_Relatorio_Funcoes_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Funcoes\Relatorio_Funcoes.rdlc" />
+    <EmbeddedResource Include="Relatorios\IR\Fm_IR_Recisao_Aluguel.resx">
+      <DependentUpon>Fm_IR_Recisao_Aluguel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_IR_Recisao_Aluguel_R.resx">
+      <DependentUpon>Fm_IR_Recisao_Aluguel_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_Informe_DIRF_R.resx">
+      <DependentUpon>Fm_Relatorio_Informe_DIRF_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_Informe_IR_R.resx">
+      <DependentUpon>Fm_Relatorio_Informe_IR_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_IR_Data_Recolhimento.resx">
+      <DependentUpon>Fm_Relatorio_IR_Data_Recolhimento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_IR_Data_Recolhimento_R.resx">
+      <DependentUpon>Fm_Relatorio_IR_Data_Recolhimento_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_IR_R.resx">
+      <DependentUpon>Fm_Relatorio_IR_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_UCB_IR_R.resx">
+      <DependentUpon>Fm_Relatorio_UCB_IR_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_UCB_IR_Resisao_Contrato.resx">
+      <DependentUpon>Fm_UCB_IR_Resisao_Contrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_UCB_IR_Resisao_Contrato_R.resx">
+      <DependentUpon>Fm_UCB_IR_Resisao_Contrato_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Relatorio_Informe_IR.rdlc" />
+    <EmbeddedResource Include="Relatorios\IR\Relatorio_UCB_IR.rdlc" />
+    <EmbeddedResource Include="Relatorios\IR\Relatorio_Informe_Individual_IR.rdlc" />
+    <EmbeddedResource Include="Relatorios\IR\Relatorio_Informe_DIRF.rdlc" />
+    <EmbeddedResource Include="Relatorios\IR\Relatorio_IR_Recisao_Aluguel.rdlc" />
+    <EmbeddedResource Include="Relatorios\Mes_Aberto_APS\Fm_Mes_Aberto_APS.resx">
+      <DependentUpon>Fm_Mes_Aberto_APS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Mes_Aberto_APS\Mes_Aberto_APS.rdlc" />
+    <EmbeddedResource Include="Relatorios\Observacao\Fm_Relatorio_Observacao_R.resx">
+      <DependentUpon>Fm_Relatorio_Observacao_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Observacao\Relatorio_Observacao.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos.resx">
+      <DependentUpon>Fm_Relatorio_Tributos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cofins\Fm_Relatorio_Campo_COFINS.resx">
+      <DependentUpon>Fm_Relatorio_Campo_COFINS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Observacao\Fm_Relatorio_Observacao.resx">
+      <DependentUpon>Fm_Relatorio_Observacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cofins\Fm_Relatorio_UCB_Cofins.resx">
+      <DependentUpon>Fm_Relatorio_UCB_Cofins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Campo_Deposito.resx">
+      <DependentUpon>Fm_Relatorio_Campo_Deposito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_Nao_Depositaram.resx">
+      <DependentUpon>Fm_Relatorio_Nao_Depositaram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Depositos\Fm_Relatorio_UCB_Depositos.resx">
+      <DependentUpon>Fm_Relatorio_UCB_Depositos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_Campo_IR.resx">
+      <DependentUpon>Fm_Relatorio_Campo_IR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_Informe_IR.resx">
+      <DependentUpon>Fm_Relatorio_Informe_IR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IR\Fm_Relatorio_UCB_IR.resx">
+      <DependentUpon>Fm_Relatorio_UCB_IR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Anual_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Anual_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Demais_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Demais_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_FGTS_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_FGTS_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Geral_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Geral_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_INSS_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB_INSS_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_DARF_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB_DARF_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Fm_Relatorio_Tributos_Recolhimento_UCB_FGTS_R.resx">
+      <DependentUpon>Fm_Relatorio_Tributos_Recolhimento_UCB_FGTS_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_FGTS.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Demais.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Geral.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Recolhimento_UCB_DARF_Educ.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Recolhimento_UCB_DARF_UNASP.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_UCB_RH_2.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Recolhimento_UCB_FGTS_R.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Recolhimento_UCB_DARF.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Recolhimento_UCB_INSS.rdlc" />
+    <EmbeddedResource Include="Relatorios\Cad_Usuarios\Fm_Relatório_Usuario.resx">
+      <DependentUpon>Fm_Relatório_Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cad_Usuarios\Fm_Relatório_Usuario_R.resx">
+      <DependentUpon>Fm_Relatório_Usuario_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Cad_Usuarios\Relatório_Usuario.rdlc" />
+    <EmbeddedResource Include="Relatorios\Tributos\Relatorio_Tributos_Recolhimento_UCB_DARF_IPAPS.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DS_Tributos.xsc">
+      <DependentUpon>DS_Tributos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Tributos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Tributos.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Tributos.xss">
+      <DependentUpon>DS_Tributos.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Tributos_2.0_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Atualizador\Atualizador.exe" />
+    <Content Include="Icon\add-folder.ico" />
+    <Content Include="Icon\add-note.ico" />
+    <Content Include="Icon\Calculadora.ico" />
+    <Content Include="Icon\Campo.ico" />
+    <Content Include="Icon\cancel.ico" />
+    <Content Include="Icon\CLOCK01.ICO" />
+    <Content Include="Icon\Cofins.ico" />
+    <Content Include="Icon\contacts.ico" />
+    <Content Include="Icon\cubes.ico" />
+    <Content Include="Icon\DATE.ICO" />
+    <Content Include="Icon\db1.ico" />
+    <Content Include="Icon\DELETE.ICO" />
+    <Content Include="Icon\Depositos.ico" />
+    <Content Include="Icon\EDIT.ICO" />
+    <Content Include="Icon\first-page.ico" />
+    <Content Include="Icon\history.ico" />
+    <Content Include="Icon\iasd.ico" />
+    <Content Include="Icon\IR.ico" />
+    <Content Include="Icon\leao2.ico" />
+    <Content Include="Icon\LITENING.ICO" />
+    <Content Include="Icon\man.ico" />
+    <Content Include="Icon\MSGBOX02.ICO" />
+    <Content Include="Icon\network.ico" />
+    <Content Include="Icon\NEW.ICO" />
+    <Content Include="Icon\oUsers.ico" />
+    <Content Include="Icon\remove-folder.ico" />
+    <Content Include="Icon\Reports.ico" />
+    <Content Include="Icon\Search.ico" />
+    <Content Include="Icon\source_f.ico" />
+    <Content Include="Icon\source_h.ico" />
+    <Content Include="Icon\source_l.ico" />
+    <Content Include="Icon\source_o.ico" />
+    <Content Include="Icon\spreadsheet.ico" />
+    <Content Include="Icon\txt.ico" />
+    <Content Include="Icon\UCB.ico" />
+    <Content Include="Icon\unknown.ico" />
+    <Content Include="Icon\video.ico" />
+    <Content Include="Icon\W95MBX01.ICO" />
+    <Content Include="Imagens\Ajuda.jpg" />
+    <Content Include="Imagens\cadastro.png" />
+    <Content Include="Imagens\Capturar.JPG" />
+    <Content Include="Imagens\Fazenda.bmp" />
+    <Content Include="Imagens\Fazenda.jfif" />
+    <Content Include="Imagens\Fazenda2.bmp" />
+    <Content Include="Imagens\Geral.png" />
+    <Content Include="Imagens\IASD.jpg" />
+    <Content Include="Imagens\IR.jpg" />
+    <Content Include="Imagens\Login.jpg" />
+    <Content Include="Imagens\logo-1+1-2015-vazado-01.png" />
+    <Content Include="Imagens\PriA.jpg" />
+    <Content Include="Imagens\Relatorio.jpg" />
+    <Content Include="Imagens\tabela IR 2017.JPG" />
+    <Content Include="Imagens\Tributos.jpg" />
+    <Content Include="Imagens\UCB.jpeg" />
+    <Content Include="Logo-IASD.ico" />
+    <Content Include="Resources\Atualizador.exe" />
+    <None Include="Resources\UnRARNET.dll" />
+    <None Include="Resources\unrar.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Relatorios\Tributos\Campo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="pt\Microsoft.SqlServer.Types.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="pt\Tributos_2.0.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

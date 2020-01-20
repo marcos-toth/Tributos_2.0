@@ -1,0 +1,242 @@
+﻿Imports System.Data.SqlClient
+Public Class Fm_Contabilizacao_IR
+    Private Sub Fm_Contabilizacao_IR_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.MdiParent = Fm_Principal
+        Txt_Data_Pagamento.Text = Date.Today
+        vlDia = DateTime.Now.Day
+        vlAno = DateTime.Now.Year
+        vlMes = DateTime.Now.Month - 1
+        vlCalendario = DateTime.Now.Year()
+        ComboData()
+        'Conectar ao banco
+        conectar = New SqlConnection
+        conectar.ConnectionString = cnn
+        Validar()
+        Preencher_Combo_Mes_01()
+
+    End Sub
+
+    Private Sub Preencher_Combo_Mes_01()
+        Try
+            For i = 1 To CB_Periodo.Items.Count
+                'CB_Periodo.SelectedIndex = 1
+                CB_Periodo.Items.Remove(CB_Periodo.SelectedIndex)
+
+            Next
+            sql = "Select  Periodo from periodo Where condicao='A'"
+            conectar.Open()
+            adaptar = New SqlDataAdapter(sql, conectar)
+            conectar.Close()
+            local = New DataSet
+            adaptar.Fill(local, "periodo")
+            CB_Periodo.ValueMember = "id"
+            CB_Periodo.DisplayMember = "periodo"
+            CB_Periodo.DataSource = local.Tables(0)
+            LB_Data_Pag.Text = "Data Encerramento"
+            resultado = local.Tables("periodo").Rows.Count
+            If resultado = 0 Then
+                lbInform.Text = "Não Existe Período para Gerar Guia"
+                Btn_Contabilizar.Enabled = False
+                Label2.Visible = False
+                CB_Periodo.Visible = False
+            Else
+                lbInform.Text = ""
+                Btn_Contabilizar.Text = "Encerrar Período"
+                Btn_Contabilizar.Width = 120
+                Btn_Contabilizar.Enabled = True
+                Label2.Visible = True
+                CB_Periodo.Visible = True
+                CB_Periodo.Width = 100
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Private Sub Preencher_Combo_Mes_02()
+        Try
+            For i = 1 To CB_Periodo.Items.Count
+                ''CB_Periodo.SelectedIndex = 1
+                CB_Periodo.Items.Remove(CB_Periodo.SelectedIndex)
+                'CB_Periodo.Items.Clear()
+            Next
+
+            sql = "Select  DISTINCT Mes from IR Where fechado='S'"
+            sql += " And Mes <= "
+            sql += "'" & vlMes & "'"
+            conectar.Open()
+            adaptar = New SqlDataAdapter(sql, conectar)
+            conectar.Close()
+            local = New DataSet
+            adaptar.Fill(local, "IR")
+            CB_Periodo.ValueMember = "id"
+            CB_Periodo.DisplayMember = "Mes"
+            CB_Periodo.DataSource = local.Tables(0)
+            LB_Data_Pag.Text = "Data Pagamento"
+            resultado = local.Tables("IR").Rows.Count
+            If resultado = 0 Then
+                lbInform.Text = "Não Existe Período para Gerar Guia"
+                Btn_Contabilizar.Enabled = False
+            Else
+                lbInform.Text = ""
+                Btn_Contabilizar.Text = "Inserir Data de Pagamento"
+                Btn_Contabilizar.Width = 150
+                Btn_Contabilizar.Enabled = True
+                Label2.Visible = False
+                CB_Periodo.Visible = False
+                CB_Periodo.Width = 40
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Private Sub IDMAx()
+
+        Try
+            sql = "Select Max(Id) MaxID from IR "
+            sql += "Where Contabilizado='" & "S" & "'"
+            sql += "And Fechado='" & "S" & "'"
+            conectar.Open()
+            adaptar = New SqlDataAdapter(sql, conectar)
+            conectar.Close()
+            local = New DataSet
+            adaptar.Fill(local, "IR")
+            resultado = local.Tables("IR").Rows.Count
+            registro = local.Tables("IR").Rows(0)
+            Id = local.Tables(0).Rows(0)("MaxId")
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Private Sub ComboData()
+
+        If vlMes = "1" Then
+            vlMes = "01"
+        ElseIf vlMes = "2" Then
+            vlMes = "02"
+        ElseIf vlMes = "3" Then
+            vlMes = "03"
+        ElseIf vlMes = "4" Then
+            vlMes = "04"
+        ElseIf vlMes = "5" Then
+            vlMes = "05"
+        ElseIf vlMes = "6" Then
+            vlMes = "06"
+        ElseIf vlMes = "7" Then
+            vlMes = "07"
+        ElseIf vlMes = "8" Then
+            vlMes = "08"
+        ElseIf vlMes = "9" Then
+            vlMes = "09"
+        ElseIf vlMes = "0" Then
+            vlMes = "12"
+        End If
+    End Sub
+    Sub Contabilizar_IR()
+        vlAno = Year(Txt_Data_Pagamento.Text)
+        Validar()
+        IDMAx()
+        DataCadastro = Format(CType(Txt_Data_Pagamento.Text, DateTime), "yyyy/MM/dd HH:mm:ss")
+        If resultado > 0 Then
+            If MsgBox("Olá " & NomeUsuario & Informe, MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                Try
+                    VPeriodo = CB_Periodo.Text
+                    vlAno = Microsoft.VisualBasic.Left(VPeriodo, 4)
+                    vlMes = Microsoft.VisualBasic.Right(VPeriodo, 2)
+                    If R_Fechar.Checked Then
+                        vlMes = Month(Txt_Data_Pagamento.Text) - 1
+                        ComboData()
+                        sql = "update IR set Fechado='" & "S" & "',"
+                        sql += " DataFechamento='" & DataCadastro & "'"
+                        sql += "Where Contabilizado='" & "N" & "'"
+                        sql += "And Mes<='" & vlMes & "'"
+                        sql += "And Id>'" & Id & "'"
+                        Gravar_Banco()
+                        Preencher_Combo_Mes_01()
+                    Else
+                        vlMes = Month(Txt_Data_Pagamento.Text)
+                        ComboData()
+                        sql = "update IR set Contabilizado='" & "S" & "',"
+                        sql += " MesRecolhido='" & vlMes & "',"
+                        sql += " DataRecolhimento='" & Txt_Data_Pagamento.Text & "'"
+                        sql += "Where Contabilizado='" & "N" & "'"
+                        sql += "And Fechado='" & "S" & "'"
+                        sql += "And Id>'" & Id & "'"
+                        Gravar_Banco()
+                        Preencher_Combo_Mes_02()
+                    End If
+
+                    MsgBox("Contabilização Realizada com Sucesso!!", vbInformation, "Contabilização")
+
+                Catch ex As Exception
+                    conectar.Close()
+                    MsgBox("Erro de Conecção, Não foi realizada a Contabilização")
+                End Try
+            End If
+        Else
+            lbInform.Text = "Todos os dados ja foram contabilizados!!"
+            Txt_Data_Pagamento.Focus()
+            Btn_Contabilizar.Enabled = False
+        End If
+    End Sub
+    Sub Gravar_Banco()
+        conectar.Open()
+        comando = New SqlCommand(sql)
+        comando.Connection = conectar
+        comando.ExecuteNonQuery()
+        conectar.Close()
+    End Sub
+
+    Sub Validar()
+        Try
+            resultado = 0
+            lbInform.Text = ""
+            sql = "select * from IR where Contabilizado="
+            sql += "'" & "N" & "'"
+            conectar.Open()
+            adaptar = New SqlDataAdapter(sql, conectar)
+            conectar.Close()
+            local = New DataSet
+            adaptar.Fill(local, "Entidade")
+            resultado = local.Tables("Entidade").Rows.Count
+            If resultado > 0 Then
+                registro = local.Tables("Entidade").Rows(0)
+            Else
+                lbInform.Text = "Todos os dados ja foram contabilizados!!"
+                Txt_Data_Pagamento.Focus()
+                Btn_Contabilizar.Enabled = False
+                conectar.Close()
+                Exit Sub
+            End If
+            lbInform.Text = ""
+        Catch ex As Exception
+        End Try
+    End Sub
+    Private Sub Btn_Contabilizar_Click(sender As Object, e As EventArgs) Handles Btn_Contabilizar.Click
+        Contabilizar_IR()
+    End Sub
+
+    Private Sub R_Fechar_CheckedChanged(sender As Object, e As EventArgs) Handles R_Fechar.CheckedChanged
+        Try
+            CB_Periodo.Items.Clear()
+        Catch ex As Exception
+        End Try
+        If R_Fechar.Checked Then
+            LB_Informacao.Text = "Favor Inserir a Data do Fechamento da Guia de IR de Aluguéis."
+            Informe = " Deseja Marcar Como Gerado a Guia de IR de Alugueis?"
+            Preencher_Combo_Mes_01()
+        End If
+    End Sub
+
+    Private Sub R_Contabilizar_CheckedChanged(sender As Object, e As EventArgs) Handles R_Contabilizar.CheckedChanged
+        Try
+            CB_Periodo.Items.Clear()
+        Catch ex As Exception
+        End Try
+        If R_Contabilizar.Checked Then
+            LB_Informacao.Text = "Favor Inserir a Data do Pagamento da Guia de IR de Aluguéis."
+            Informe = " Deseja Marcar Como Contabilizado as Guias de IR de Alugueis?"
+            Preencher_Combo_Mes_02()
+        End If
+    End Sub
+End Class

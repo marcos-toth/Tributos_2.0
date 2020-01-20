@@ -1,0 +1,6 @@
+'Adm - Public cnn As String = "server=" & ShowLine("q8rwHakHlXn93cxQzOY5p9p4tz60gEkP6NKJUGtWWCo=", Crypt("˘Û¥≤Â‚ÛÌπÎ")) & ";user id=" & ShowLine("FtC8GvbO3MRG2K/ywdQ9zA==", Crypt("˘Û¥≤Â‚ÛÌπÎ")) & ";password=" & ShowLine("ieGNujmFoo4qwHC0Fj7mzg==", Crypt("˘Û¥≤Â‚ÛÌπÎ")) & ";database=" & ShowLine("UZ3AruXVeD3hVMb6sg82b5ROlWqNdSFwq/VHgIWbh0s=", Crypt("˘Û¥≤Â‚ÛÌπÎ"))
+'Local - Public cnn As String = "server=" & ShowLine("qrfpvpTXg2GLLCqPky1Pw6+WvKccoSbiiRIsc2B20Ds=", Crypt("ÎÙ≥±∑Ú±")) & ";user id=" & ShowLine("nfuSTJVo/+YRCZnaCBpeLrxwVsS7lyLmeT3H5z7fS74=", Crypt("ÎÙ≥±∑Ú±")) & ";password=" & ShowLine("rC2PRRijXZe+3+eURoZk/hZrHfoaP6ra63XhUYvakUw=", Crypt("ÎÙ≥±∑Ú±")) & ";database=" & ShowLine("CQW6iWv6WrEy/gfvkEgGO2sRrl9sIIsCYGeUnxnmw+w=", Crypt("ÎÙ≥±∑Ú±"))
+   
+
+
+Public cnn As String = "Data Source=10.101.0.2;Initial Catalog=Tributos;Persist Security Info=True;User ID=ucbcont;Password= kt317r1"
